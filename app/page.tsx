@@ -40,9 +40,9 @@ export default function Home() {
   }
 
   function handleCellClick(x: number, y: number, status: number) {
-    if (inGame) return;
+    // if (inGame) return;
     const newCells = cells.map((row) => row.slice());
-    newCells[x][y] = (status + 1) % 3;
+    newCells[x][y] = (status + 1) % 4;
     setCells(newCells);
   }
 
@@ -70,7 +70,7 @@ export default function Home() {
     <div>
       <a
         className="p-3 text-blue-500 underline absolute bottom-0 right-0 text-3xl"
-        href="https://github.com/ichir0roie/burning_two_d_array"
+        href="https://github.com/ichir0roie/burning_two_d_array/blob/main/modules/game_logic.tsx"
       >
         GitHub
       </a>

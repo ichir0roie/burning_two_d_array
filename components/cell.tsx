@@ -10,12 +10,13 @@ export default function Cell(p: Props) {
     if (p.status === 0) {
       return "white";
     } else if (p.status === 1) {
-      return "gray";
+      return "green";
     } else if (p.status === 2) {
       return "red";
-    } else {
-      return "purple";
+    } else if (p.status === 3) {
+      return "gray";
     }
+    return "black";
   }
 
   return (
